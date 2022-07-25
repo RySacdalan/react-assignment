@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&family=Mochiy+Pop+One&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap");
+
+*{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+ font-family: 'Merriweather Sans', sans-serif;
+ background-color: #002029;
+}
+.container{
+ padding: 2rem;
+ margin: 2rem 0;
+ background-color: #00303d;
+}
+.container_details{
+ display: grid;
+ grid-template-columns:repeat(2, 1fr);
+ gap: 15px;
+}
+.card-one{
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+ justify-content: space-between;
+ text-align: center;
+ width: 275px;
+ height: 300px;
+}
+.card-one-content{
+ color: #002029;
+}
+.card_robo{
+ overflow: hidden;
+ background-color: #00607a;
+ width: 275px;
+ height:  225px;
+}
+.card_robo:hover{
+ transform: scale(1.1);
+ transition: 0.2s ease;
+}
+.card_robo_name{
+ font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex_in_two{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.order_data{
+ margin-bottom: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-two{
+ color: #fff;
+ background-color: #00607a;
 }
